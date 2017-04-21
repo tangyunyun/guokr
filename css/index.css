@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #353535;
+  text-decoration: none;
+}
+
+/*less公共变量*/
+
+/* less 公共函数 */
+
+/*header css*/
+
+.head {
+  width: 16rem;
+  height: 2.35rem;
+  background: #262626;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #4bccae;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 0 0.4rem;
+}
+
+.head .menu {
+  width: 1.45rem;
+  height: 1.2rem;
+  background: url(../img/menu_bg.png) no-repeat;
+  background-size: 1.45rem 1.2rem;
+  text-indent: -9999rem;
+}
+
+.head .logo {
+  width: 6.3rem;
+  height: 0.975rem;
+  background: url(../img/logo_bg.png) no-repeat;
+  background-size: 6.3rem 0.975rem;
+  text-indent: -999rem;
+}
+
+.head .pc {
+  width: 1.45rem;
+  height: 1.15rem;
+  background: url(../img/pc_bg.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  text-indent: -99rem;
+}
+
+/*user css*/
+
+.user-box {
+  width: 16rem;
+  height: 2.05rem;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-box a {
+  font-size: 0.75rem;
+  color: #8d8d8d;
+  height: 1.45rem;
+  line-height: 1.45rem;
+  padding-left: 2rem;
+}
+
+.user-box .login {
+  background: url(../img/login_bg.png) no-repeat;
+  background-size: 1.45rem 1.45rem;
+}
+
+.user-box .reg {
+  background: url(../img/reg_bg.png) no-repeat;
+  background-size: 1.45rem 1.45rem;
+}
+
+.user-box .wire {
+  height: 1.45rem;
+  border-left: 0.05rem solid #e0e0e0;
+  border-right: 0.1rem solid #fdfdfd;
+  text-indent: -999rem;
+  margin: 0 1.45rem;
+}
+
+/*slider css*/
+
+.slider-box {
+  width: 16rem;
+  height: 7.775rem;
+  background: #000;
+  overflow: hidden;
+}
+
+.slider-box li {
+  width: 16rem;
+  height: 7.775rem;
+  float: left;
+  position: relative;
+}
+
+.slider-box li img {
+  display: block;
+  width: 100%;
+}
+
+.slider-box li .slider-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.slider-box li .slider-title a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  display: block;
+  font-size: 0.725rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*news-list css*/
+
+.news-list {
+  width: 16rem;
+  height: 14.3rem;
+  display: flex;
+  border-bottom: 0.1rem solid #58c1b0;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 0 0.4rem;
+}
+
+.news-list li {
+  height: 2.025rem;
+  line-height: 2.025rem;
+  border-bottom: 0.05rem solid #e8e8e8;
+  box-sizing: border-box;
+}
+
+.news-list .listbox-a {
+  font-size: 0.5rem;
+  padding-left: 0.325rem;
+}
+
+.news-list .listbox-li {
+  border-bottom: none;
+}
+
+/*hot_answer css*/
+
+.hot_answer {
+  width: 16rem;
+  height: 2.025rem;
+  display: flex;
+  background: #fafafa;
+  border-bottom: 0.05rem solid #e8e8e8;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.75rem;
+}
+
+.hot_answer a,
+.hot_answer h3 {
+  font-size: 0.725rem;
+  color: #040404;
+  font-weight: normal;
+}
+
+.hot_answer .hot-icon {
+  width: 1.475rem;
+  height: 1.475rem;
+  background: url(../img/hot_bg.png) no-repeat;
+  background-size: 1.475rem 1.475rem;
+  text-indent: -999rem;
+}
+
+/*info css*/
+
+.info {
+  width: 16rem;
+  height: 2.075rem;
+  display: flex;
+  border-bottom: 0.05rem solid #e8e8e8;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.info li {
+  padding: 0 0.85rem;
+}
+
+.info li a {
+  font-size: 0.725rem;
+  color: #323232;
+  height: 2.075rem;
+  line-height: 2.075rem;
+}
+
+.info .active {
+  border-bottom: 0.1rem solid #d43553;
+  box-sizing: border-box;
+}
+
+/*detect css*/
+
+.detect {
+  width: 16rem;
+  height: 6.55rem;
+  padding: 0 0.4rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.detect li {
+  height: 6.55rem;
+  border-bottom: 0.05rem solid #e8e8e8;
+  box-sizing: border-box;
+}
+
+.detect li a,
+.detect li p {
+  font-size: 0.725rem;
+}
+
+.detect li .dete-a1 {
+  padding-left: 0.325rem;
+  box-sizing: border-box;
+}
+
+.detect li .dete-img {
+  width: 5.2rem;
+  height: 3.7rem;
+  background-size: 5.2rem 3.7rem;
+  text-indent: -999rem;
+  float: left;
+  margin-right: 0.7rem;
+  margin-top: 0.6rem;
+  margin-left: 0.325rem;
+}
+
+.detect li .dete-p {
+  height: 1.125rem;
+  line-height: 1.125rem;
+  padding-top: 0.65rem;
+}
+
+/*listfile css*/
+
+.listfile {
+  width: 16rem;
+  height: 8.15rem;
+  padding: 0 0.4rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.1rem solid #58c1b0;
+  box-sizing: border-box;
+}
+
+.listfile li {
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.725rem;
+  border-bottom: 0.05rem solid #e8e8e8;
+  box-sizing: border-box;
+  padding-left: 0.325rem;
+}
+
+.listfile .last {
+  border-bottom: none;
+  box-sizing: border-box;
+}
+
+/*andlist css*/
+
+.andlist {
+  width: 16rem;
+  height: 8.15rem;
+  padding: 0 0.4rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: none;
+  box-sizing: border-box;
+}
+
+/*roof css*/
+
+.roof {
+  width: 100%;
+  height: 3rem;
+  background: #fafafa;
+  border-top: 0.05rem solid #e8e8e8;
+  border-bottom: 0.1rem solid #58c1b0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roof a {
+  font-size: 0.725rem;
+  color: #84888b;
+  height: 1.475rem;
+  line-height: 1.475rem;
+  padding-left: 1.95rem;
+}
+
+.roof .roof-top {
+  background: url(../img/arrow.png) no-repeat;
+  background-size: 1.475rem 1.475rem;
+}
+
+/*footer css*/
+
+.footer {
+  width: 16rem;
+  height: 3.75rem;
+  background: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer a {
+  font-size: 0.75rem;
+  color: #8d8d8d;
+  height: 1.45rem;
+  line-height: 1.45rem;
+  padding-left: 1.25rem;
+}
+
+.footer .web-pc {
+  background: url(../img/pc_bg.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  padding-left: 2rem;
+}
+
+.footer .move {
+  background: url(..//img/iphone.png) no-repeat;
+  background-size: 0.65rem 1.15rem;
+}
+
+.footer .footwire {
+  height: 1.45rem;
+  border-left: 0.05rem solid #666;
+  border-right: 0.1rem solid #2b2b2b;
+  text-indent: -999rem;
+  margin: 0 1.45rem;
+}
